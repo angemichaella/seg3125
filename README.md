@@ -2,7 +2,7 @@
 
 
 ### Links to labs per module
-1. [Module 1](https://docs.github.com/categories/github-pages-basics/)
+1. [Module 1](https://angemichaella.github.io/seg3125/mod1/index.html)
 2. Module 2
 
 ### Support or Contact
