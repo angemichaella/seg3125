@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.website-presentation {
+    text-align: center;
+    margin-top: 5%
+}
+
+.questions {
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+}

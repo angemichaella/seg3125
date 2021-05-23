@@ -1,7 +1,61 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Module 1 - Survey</h1>
+        </header>
+        <div class = 'website-presentation'>
+            <h2>We are happy to see you here!</h2>
+            <p>In this survey, we'll ask you a few questions about <a href="https://www.taskrabbit.ca/ca/en/" target = '_blank'>TaskRabbit's</a> website.</p> 
+            <p><b>We strongly recommend you visit their website before answering to the questions below.</b></p>
+            <figure>
+                <a href="https://www.taskrabbit.ca/ca/en/" target = '_blank'><img src="img/homepage.jpg" alt="TaskRabbit Homepage" style="width:50%"></a>
+                <figcaption><i>TaskRabbit's Homepage.</i></figcaption>
+            </figure>
+        </div>
+        <div class = 'questions'>
+            <form>
+                <label for="q1"><b>Q1. Please enter your name (It does not have to be your real name):</b></label><br>
+                <input type="text" id="q1" name="q1" placeholder="Ex: Anna, Joanne, Max, etc."><br><br>
+
+                <p><b>Q2. Please select your gender:</b></p>
+                <input type="radio" id="q2-1" name="q2" value="one">
+                <label for="q2-1">One</label><br>
+                <input type="radio" id="q2-2" name="q2" value="two">
+                <label for="q2-2">Two</label><br>
+                <input type="radio" id="q2-3" name="q2" value="three">
+                <label for="q2-3">Three</label><br><br>
+
+
+                <label for="q3"><b>Q3. Selection list:</b></label>
+                <select name="q3" id="q3">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select><br><br>
+
+                
+                <p><b>Q3. Please select your gender:</b></p>
+                <input type="checkbox" id="q4-1" name="q4-1" value="Bike">
+                <label for="q4-1"> I have a bike</label><br>
+                <input type="checkbox" id="q4-2" name="q4-2" value="Car">
+                <label for="q4-2"> I have a car</label><br>
+                <input type="checkbox" id="q4-3" name="q4-3" value="Boat">
+                <label for="q4-3"> I have a boat</label><br><br>
+
+                <label for="q5"><b>Q5. Additional Comments:</b></label><br>
+                <textarea id="q5" name="q5" rows="4" cols="50">
+                </textarea><br><br>
+
+                <input type="submit" value="Submit"><br><br>
+            </form>
+        </div>
+        <footer>
+                <p><i>Website designed by Me.</i></p>
+        </footer>
+    </body>
 </html>
