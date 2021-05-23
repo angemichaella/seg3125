@@ -1,7 +1,7 @@
-## Welcome to my labs' pages
+## Welcome to my demos' pages
 
 
-### Links to labs per module
+### Links to demos per module
 1. [Module 1](https://angemichaella.github.io/seg3125/mod1/index.html)
 2. Module 2
 
