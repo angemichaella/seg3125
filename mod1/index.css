@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #666;
+    background-color: #00A8E8;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -15,10 +15,11 @@ header {
 }
 
 footer {
-    background-color: #777;
     padding: 10px;
+    padding-bottom: 2px;
+    margin-bottom:0px;
+    margin-top: 20px;
     text-align: center;
-    color: white;
     left: 0;
     bottom: 0;
     width: 100%;
