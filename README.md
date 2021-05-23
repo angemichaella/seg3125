@@ -7,4 +7,4 @@
 
 ### Support or Contact
 
-Having trouble with Pages? Check out [Github's documentation](https://docs.github.com/categories/github-pages-basics/) or [contact me](mailto:aniyo066@uottawa.ca?subject=Inquiry: SEG3125 - Github Pages) and I’ll help you sort it out.
+Having trouble with Pages? Check out [Github's documentation](https://docs.github.com/categories/github-pages-basics/) or [contact me](mailto:aniyo066@uottawa.ca) and I’ll help you sort it out.
