@@ -63,3 +63,7 @@ footer {
 .main {
   min-height: 25em;
 }
+
+body, button, option {
+  font-size: 20px;
+}

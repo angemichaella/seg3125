@@ -29,12 +29,21 @@
 	<option value="lactoseFree">Lactose Free</option>
   <option value="nutFree">Nut Free</option>
   <option value="None">None</option>
-	</select>
+  </select>
+  
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
+  <input type="checkbox" id = "isOrganic" name="organic" value="Organic" onclick="selectOrganic(this, 'displayProduct')">
+	<label for="organic">Organic Only</label><br>
+  <button id="high" type="button" class="block" onclick="high('displayProduct')">
+		Sort High to Low
+  </button>
+  <button id="low" type="button" class="block" onclick="low('displayProduct')">
+		Sort Low to High
+  </button><br>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">

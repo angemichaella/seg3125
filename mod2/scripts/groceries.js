@@ -7,79 +7,92 @@ var products = [
 		name: "brocoli",
 		lactoseFree: true,
 		nutFree: true,
+		organic: true,
 		price: 1.99
 	},
 	{
 		name: "bread",
 		lactoseFree: true,
 		nutFree: false,
+		organic: false,
 		price: 2.35
 	},
 	{
 		name: "salmon",
 		lactoseFree: false,
 		nutFree: true,
+		organic: true,
 		price: 10.00
 	},
 	{
 		name: "almond milk",
 		lactoseFree: false,
 		nutFree: true,
-		price: 10.00
+		organic: true,
+		price: 5.00
 	},
 	{
-		name: "salmon",
+		name: "avocado",
 		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		nutFree: false,
+		organic: true,
+		price: 7.49
 	},
 	{
-		name: "salmon",
+		name: "organic milk",
 		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		nutFree: false,
+		organic: true,
+		price: 15.99
 	},
 	{
-		name: "salmon",
-		lactoseFree: false,
+		name: "cucumber",
+		lactoseFree: true,
 		nutFree: true,
-		price: 10.00
+		organic: true,
+		price: 5.49
 	},
 	{
-		name: "salmon",
+		name: "tomato",
 		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		nutFree: false,
+		organic: true,
+		price: 10.49
 	},
 	{
-		name: "salmon",
+		name: "banana",
 		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		nutFree: false,
+		organic: true,
+		price: 8.49
 	},
 	{
-		name: "salmon",
-		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		name: "soy milk",
+		lactoseFree: true,
+		nutFree: false,
+		organic: true,
+		price: 7.99
 	},
 	{
-		name: "salmon",
+		name: "potato",
 		lactoseFree: false,
 		nutFree: true,
-		price: 10.00
+		organic: true,
+		price: 25.49
 	},
 	{
-		name: "salmon",
-		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		name: "apple",
+		lactoseFree: true,
+		nutFree: false,
+		organic: true,
+		price: 9.99
 	},
 	{
-		name: "salmon",
-		lactoseFree: false,
-		nutFree: true,
-		price: 10.00
+		name: "cashew",
+		lactoseFree: true,
+		nutFree: false,
+		organic: true,
+		price: 4.49
 	}
 ];
 	
@@ -92,14 +105,15 @@ function restrictListProducts(prods, restriction) {
 	let product_names_prices = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "lactoseFree") && (prods[i].lactoseFree == true)){
-			product_names_prices.push([prods[i].name, prods[i].price]);
+			product_names_prices.push([prods[i].name, prods[i].price, prods[i].organic]);
 		}
 		else if ((restriction == "nutFree") && (prods[i].nutFree == true)){
-			product_names_prices.push([prods[i].name, prods[i].price]);
+			product_names_prices.push([prods[i].name, prods[i].price, prods[i].organic]);
 		}
 		else if (restriction == "None"){
-			product_names_prices.push([prods[i].name, prods[i].price]);
+			product_names_prices.push([prods[i].name, prods[i].price, prods[i].organic]);
 		}
+
 	}
 	return product_names_prices;
 }
@@ -108,8 +122,10 @@ function restrictListProducts(prods, restriction) {
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
 	for (let i=0; i<chosenProducts.length; i+=1) {
-		if (chosenProducts.indexOf(products[i].name) > -1){
-			totalPrice += products[i].price;
+		for (let j=0; j<products.length; j+=1) {
+			if (chosenProducts[i] == products[j].name) {
+				totalPrice += products[j].price;
+			} 
 		}
 	}
 	return totalPrice;

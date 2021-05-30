@@ -2,6 +2,8 @@
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
+var optionArray;
+
 function openInfo(evt, tabName) {
 
 	// Get all elements with class="tabcontent" and hide them
@@ -32,19 +34,30 @@ function populateListProductChoices(slct1, slct2) {
     var s2 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-    s2.innerHTML = "";
+    
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    optionArray = restrictListProducts(products, s1.value);
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
-		
+	
+	displayProducts(optionArray, slct2);
+	
+
+}
+	
+function displayProducts(optionArray, slct2) {
+
+	var s2 = document.getElementById(slct2);
+	s2.innerHTML = "";
+
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i][0];
 		var productPrice = optionArray[i][1];
+
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -55,14 +68,15 @@ function populateListProductChoices(slct1, slct2) {
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName + " $" + productPrice));
+		label.appendChild(document.createTextNode(productName + " - $" + productPrice));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
+
 	}
+
 }
-	
 // This function is called when the "Add selected items to cart" button in clicked
 // The purpose is to build the HTML to be displayed (a Paragraph) 
 // We build a paragraph to contain the list of selected items, and the total price
@@ -93,3 +107,54 @@ function selectedItems(){
 		
 }
 
+function high(slct2) {
+	var optionArrayMod = [];
+	if (document.getElementById("isOrganic").checked) {
+		for (i = 0; i < optionArray.length; i++) {
+			if (optionArray[i][2]) {
+				optionArrayMod.push(optionArray[i]);
+			}
+		}
+	} else {
+		for (i = 0; i < optionArray.length; i++) {
+			optionArrayMod.push(optionArray[i]);
+		}
+	}
+	optionArrayMod.sort((a, b) => (a[1] < b[1]) ? 1 : -1)
+	displayProducts(optionArrayMod, slct2);
+}
+
+function low(slct2) {
+	var optionArrayMod = [];
+	if (document.getElementById("isOrganic").checked) {
+		for (i = 0; i < optionArray.length; i++) {
+			if (optionArray[i][2]) {
+				optionArrayMod.push(optionArray[i]);
+			}
+		}
+	} else {
+		for (i = 0; i < optionArray.length; i++) {
+			optionArrayMod.push(optionArray[i]);
+		}
+	}
+	optionArrayMod.sort((a, b) => (a[1] > b[1]) ? 1 : -1)
+	displayProducts(optionArrayMod, slct2);
+}
+
+function selectOrganic(cb, slct2 ) {
+	if(cb.checked) {
+		var optionArrayMod = [];
+		//console.log(optionArray.length);
+		
+		for (i = 0; i < optionArray.length; i++) {
+			if (optionArray[i][2]) {
+				optionArrayMod.push(optionArray[i])
+			}
+		}
+
+		displayProducts(optionArrayMod, slct2);
+	}
+	else {
+		displayProducts(optionArray, slct2);
+	}
+  }
