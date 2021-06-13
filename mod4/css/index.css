@@ -1,0 +1,122 @@
+
+@media print {
+    .container {
+      width: auto;
+    }
+  }
+
+.header {
+    /* height:90vh; */
+}
+
+.header-links{
+    background-color: #80DED9;
+    /* height:40vh; */
+    color: #0B0500;
+}
+
+.book-appointment-form {
+    background-color: #142D52;
+    color: white;
+    padding-top:10vh;
+}
+
+.headline {
+}
+
+.headline h1, h3 {
+    text-align: center;
+}
+
+.main-image img{
+    width:25%;
+    height: 25%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+
+blockquote{
+    font-size: 20px;
+    /*border-left: 15px solid rgba(11, 5, 0, 0.7);*/
+    margin: auto;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 20px 20px;
+    padding-top: 5%;
+    line-height: 1.4;
+    max-width: 60%;
+}
+
+blockquote:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #0B0500;
+    font-size: 2em;
+}
+
+blockquote p{
+    margin: 0;
+}
+
+blockquote footer{
+    margin:0;
+    text-align: right;
+    font-size: 1em;
+    font-style: italic;
+}
+
+#work-experience {
+    /* padding-top: 20vh; */
+    /* padding-bottom: 7vh; */
+}
+
+#experts, #services-text {
+    padding-top:10vh;
+}
+
+#services-text .row {
+    /* margin: 0 5vh; */
+}
+
+#services {
+    /* margin: 3vh; */
+}
+
+#book {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: white;
+    color: #142D52;
+    padding: 0;
+    padding-top: 5vh;
+}
+
+
+
+.row {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+form {
+    padding: 5% 15%;
+}
+
+.form-group {
+    padding: .5vh 0;
+}
+
+.btn-link {
+    color: #142D52;
+}

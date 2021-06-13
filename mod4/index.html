@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Huduma</title>
+    <link rel="icon" href="img/main.png">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Huduma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#experts">Experts</a>
+                <a class="nav-item nav-link" href="#services-text">Services</a>
+                <a class="nav-item nav-link" href="#book">Book an appointment</a>
+                <a class="nav-item nav-link" href="#contact-us">Contact us</a>
+                </div>
+            </div>
+            </nav>
+
+    <!-- header -->
+    <div class="container-fluid, header, no-gutters">
+        <div class="row, main-image">
+            <div class="col">
+                <img src="img/main.png" class="img-fluid" alt="Responsive image">
+                <!-- https://images.app.goo.gl/5wFWmTSfoZ6zNUQm8 -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col headline">
+                <h1 style = "color:#061A40">Huduma</h1>
+                <h3 style = "color:#2541B2;">Touch of care</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid, header-links">
+        <blockquote>
+            <p class = "quote"><em>[...]</em> Awesome staff! They were so patient with me and my son. They offer quality service. I would definitely recommend.</p>
+            <footer>- Jen, 2021</footer>
+        </blockquote>
+    </div>
+    <!-- end: header -->
+
+    <div class="container">
+        <!-- first row
+        <div class="row">
+            <h1>This is the first row</h1>
+        </div>
+         end: first row -->
+        <!-- second row -->
+        <div class="row, text-center" id="experts">
+            <h1>Meet some of our experts physiotherapists</h1><br>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-1.jpg" alt="Ruby Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Ruby</h5>
+                      <p class="card-text">With more than 10 years of experience, she remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-2.jpg" alt="Carl Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Carl</h5>
+                        <p class="card-text">With more than 10 years of experience, he remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-3.jpg" alt="Paul Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Paul</h5>
+                        <p class="card-text">With more than 10 years of experience, he remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: second row -->
+        <!-- third row -->
+        <div class="row, text-center" id="services-text">
+            <h1>Our services</h1>
+        </div>
+        <div class="row">
+            <div class="col" id="services">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Knee pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Description:</strong> Pain gradually creeping into your life? Book an appointment today to get the help you need.</p>
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Back pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Description:</strong> Pain gradually creeping into your life? Book an appointment today to get the help you need.</p>
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Shoulder & neck pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Description:</strong> Pain gradually creeping into your life? Book an appointment today to get the help you need.</p>
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Postural dysfunction
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Description:</strong> Pain gradually creeping into your life? Book an appointment today to get the help you need.</p>
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Ankle & foot pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Description:</strong> Pain gradually creeping into your life? Book an appointment today to get the help you need.</p>
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: third row -->
+    </div>
+
+    <div class="container, book-appointment-form">
+        <div class="row, text center" id="book">
+            <h3>Book your appointment today</h3>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Service:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>(Choose an option)</option>
+                        <option>Knee pain</option>
+                        <option>Back pain</option>
+                        <option>Shoulder & neck pain</option>
+                        <option>Postural dysfunction</option>
+                        <option>Ankle and foot pain</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Choose date and time:</label></br>
+                    <input type="datetime-local" id="appointment-time" name="appointment-time">
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-comments">Additional comments</label>
+                    <textarea class="form-control" id="additional-comments" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Book appointment</button>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container footer" id="contact-us">
+        <!-- fifth row -->
+        <div class="row text-center footer" >
+            <div class="col">
+                <address>
+                    Visit us at:<br>
+                    54 Fa St.<br>
+                    Ottawa ON K4P 3J5<br>
+                    Canada
+                </address>
+            </div>
+            <div class="col">
+                <address>
+                    Designed by Me.
+                </address>
+            </div>
+        </div>
+        <!-- end: fifth row -->
+    </div>
+    <!-- end: footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<!-- custom js -->
+
+<!-- end: custom js -->
+
+</body>
+</html>
