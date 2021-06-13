@@ -5,6 +5,7 @@
 1. [Module 1](https://angemichaella.github.io/seg3125/mod1/index.html)
 2. [Module 2](https://angemichaella.github.io/seg3125/mod2/index.html)
 3. [Module 3](https://angemichaella.github.io/seg3125/mod3/index.html)
+4. [Module 4](https://angemichaella.github.io/seg3125/mod4/index.html)
 
 ### Support or Contact
 
