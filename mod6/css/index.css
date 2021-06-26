@@ -1,0 +1,175 @@
+
+@media print {
+    .container {
+      width: auto;
+    }
+  }
+
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+}
+.fade-in {
+animation: fadeIn ease 3s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    /* height:90vh; */
+}
+
+.header-links{
+    background-color: #80DED9;
+    /* height:40vh; */
+    color: #0B0500;
+}
+
+.book-appointment-form {
+    background-color: white;
+    color: #142D52;
+    padding-top:10vh;
+}
+
+.headline {
+}
+
+.headline h1, h3 {
+    text-align: center;
+}
+
+.main-image img{
+    width:25%;
+    height: 25%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+
+blockquote{
+    font-size: 20px;
+    /*border-left: 15px solid rgba(11, 5, 0, 0.7);*/
+    margin: auto;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 20px 20px;
+    padding-top: 5%;
+    line-height: 1.4;
+    max-width: 60%;
+}
+
+blockquote:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #0B0500;
+    font-size: 2em;
+}
+
+blockquote p{
+    margin: 0;
+}
+
+.row {
+    padding: 5% 5%;
+}
+
+#experts, #services-text, #book-text {
+    padding-top:10vh;
+}
+
+#book {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container.footer {
+    background-color: #142D52;
+    color: white;
+    padding: 0;
+    padding-top: 5vh;
+    margin: 0;
+}
+
+
+form {
+    padding: 5% 15%;
+}
+
+input, label {
+    padding: .5vh 0;
+}
+
+.btn-link {
+    color: #142D52;
+}
+
+hr {
+    background-color: #142D52;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.btn-primary {
+    background-color: #142D52;
+    border-color: #142D52;
+}
+
+.btn-primary:hover {background-color: #0B0500}

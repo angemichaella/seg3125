@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/cupertino/jquery-ui.css"
+    rel = "stylesheet">
+ 
+
+    <title>Huduma</title>
+    <link rel="icon" href="img/main.png">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Huduma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#experts">Experts</a>
+                <a class="nav-item nav-link" href="#services-text">Services</a>
+                <a class="nav-item nav-link" href="#book">Book an appointment</a>
+                <a class="nav-item nav-link" href="#contact-us">Contact us</a>
+                </div>
+            </div>
+            </nav>
+
+    <!-- header -->
+    <div class="container-fluid header no-gutters">
+        <div class="row, main-image">
+            <div class="col fade-in">
+                <img src="img/main.png" class="img-fluid" alt="Responsive image">
+                <!-- https://images.app.goo.gl/5wFWmTSfoZ6zNUQm8 -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col headline">
+                <h1 style = "color:#061A40">Huduma</h1>
+                <h3 style = "color:#2541B2;">Touch of care</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid, header-links">
+        <blockquote>
+            <p class = "quote"><em>[...]</em> Awesome staff! They were so patient with me and my son. They offer quality service. I would definitely recommend.</p>
+            <footer>- Jen, 2021</footer>
+        </blockquote>
+    </div>
+    <!-- end: header -->
+
+    <div class="container">
+        <!-- first row
+        <div class="row">
+            <h1>This is the first row</h1>
+        </div>
+         end: first row -->
+        <!-- second row -->
+        <div class="row, text-center" id="experts">
+            <h1>Meet some of our experts physiotherapists</h1><br>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-1.jpg" alt="Ruby Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Dr Funke</h5>
+                      <p class="card-text">With more than 10 years of experience, she remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-2.jpg" alt="Carl Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Dr Leornard</h5>
+                        <p class="card-text">With more than 10 years of experience, he remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/expert-3.jpg" alt="Paul Headshot">
+                    <div class="card-body">
+                            <h5 class="card-title">Dr Smith</h5>
+                        <p class="card-text">With more than 10 years of experience, he remains one of our best therapist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: second row -->
+        <!-- third row -->
+        <div class="row, text-center" id="services-text">
+            <h1>Our services</h1>
+        </div>
+        <div class="row">
+            <div class="col" id="services">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Knee pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Back pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Shoulder & neck pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Postural dysfunction
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Ankle & foot pain
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><strong>Walk-in service available:</strong> No.</p>
+                                <p><strong>Duration:</strong>30min.</p>
+                                <p><strong>Pricing:</strong>$80.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: third row -->
+    </div>
+
+    <div class="container, book-appointment-form">
+        <div class="row, text center">
+            <!-- <h3>Book your appointment today</h3> -->
+            <!-- <form>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+                    </div>
+                <div class="form-group">
+                    <label for="service-choice">Service:</label>
+                    <select class="form-control" id="service-choice">
+                        <option>(Choose an option)</option>
+                        <option>Knee pain</option>
+                        <option>Back pain</option>
+                        <option>Shoulder & neck pain</option>
+                        <option>Postural dysfunction</option>
+                        <option>Ankle and foot pain</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Choose time:</label></br>
+                    <input type="time" id="appointment-time" name="appointment-time">
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-comments">Additional comments:</label>
+                    <textarea class="form-control" id="additional-comments" rows="3"></textarea>
+                </div>
+
+                <hr class="mb-4">
+                <h4>Payment information</h4>
+                <div class="form-group">
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        Your credit card will be charge in case of <strong>appointment cancellation less than 24hrs</strong> before the appointment time.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <label for="ccn">Credit Card Number:</label></br>
+                    <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <button type="submit" class="btn btn-success">Book appointment</button>
+            </form> -->
+        </div>
+        <div id="book">
+            <h3 id="book-text">Book your appointment today</h3>
+            <form class="row g-3" onsubmit="submitFunction()">
+                <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationDefault03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-3">
+                        <label for="service-choice" class="form-label">Service:</label>
+                        <select class="form-control form-select" id="service-choice" required>
+                            <option selected disabled value="">(Choose an option)</option>
+                            <option>Knee pain</option>
+                            <option>Back pain</option>
+                            <option>Shoulder & neck pain</option>
+                            <option>Postural dysfunction</option>
+                            <option>Ankle and foot pain</option>
+                        </select>
+                </div>
+                <div class="col-md-3">
+                        <label for="expert-choice" class="form-label">Expert:</label>
+                        <select class="form-control form-select" id="expert-choice" required>
+                                <option disabled>(Choose an option)</option>
+                        </select>
+                </div>
+                <div class="col-12">
+                    <label for="appointment-time">Choose date:</label></br>
+                    <!-- https://learn.jquery.com/jquery-ui/getting-started/ -->
+                    <input type="text" id="datepicker" required></p>
+                </div>
+                <div class="col-12">
+                    <label for="appointment-time">Choose time:</label></br>
+                    <input type="time" id="appointment-time" name="appointment-time" required>
+                </div>
+                <div class="col-12">
+                    <label for="validationDefault04" class="form-label">Additional Information (optional)</label>
+                    <input type="text" class="form-control" id="validationDefault04" placeholder="Preferred time, etc.">
+                </div>
+                <div class="col-12">
+                    <hr class="mb-4">
+                    <h4>Payment information</h4>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        Your credit card will be charge in case of <strong>appointment cancellation less than 24hrs</strong> before the appointment time.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <label for="ccn">Credit Card Number:</label></br>
+                    <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                    <hr class="mb-4">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Submit form
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container footer" id="contact-us">
+        <!-- fifth row -->
+        <div class="row text-center footer" >
+            <div class="col">
+                <address>
+                    Visit us at:<br>
+                    54 Fa St.<br>
+                    Ottawa ON K4P 3J5<br>
+                    Canada
+                </address>
+            </div>
+            <div class="col">
+                <address>
+                    Designed by Me.
+                </address>
+            </div>
+        </div>
+        <!-- end: fifth row -->
+    </div>
+    <!-- end: footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/index.js"></script>
+<!-- custom js -->
+
+<!-- end: custom js -->
+
+</body>
+</html>
