@@ -1,0 +1,36 @@
+
+@media print {
+    .container {
+        width: auto;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 3em;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    margin: 10px;
+}
+
+.grid {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid > div {
+    flex-basis: calc(20%-40px);
+}
+
+.row {
+    margin: 10px 22px;
+}
